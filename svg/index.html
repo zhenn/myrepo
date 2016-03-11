@@ -1,1 +1,53 @@
-ddd
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<title>游戏列表</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="stylesheet" href="http://h.cdn.pengpengla.com/h5lib/1.0.0/js/reset.css" />
+<link rel="stylesheet" href="./index.css" />
+<script src="http://p1.cdn.pengpengla.com/h5lib/2.0.0/js/seed.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="wrap">
+	<!--
+		- viewbox svg可视区域 0 0 xy轴上点的声明  320 跨度
+		- M	移动到(moveTo)	x,y	路径起始点坐标
+		- Z	闭合路径(closepath)	 	将路径的开始和结束点用直线连接
+		- L	直线(lineTo)	x,y	当前节点到指定(x,y)节点，直线连接
+		- H	水平直线	x	保持当前点的y坐标不变，x轴移动到x, 形成水平线
+		- V	垂直直线	y	保持当前点的x坐标不变，y轴移动到y, 形成垂直线
+	-->
+	<svg class="horse" viewbox="0 0 320 150" xmlns="http://www.w3.org/2000/svg">
+	  
+	  <image class="svgimg" xlink:href="http://p.cdn.pengpengla.com/u/2015/3/24/32475690_1427165726712.jpg" x="10" y="10">
+	  		<animateMotion path="M10 10 q100,120 120,20 q140,-50 160,0" begin="0s" dur="3s" repeatCount="indefinite"/>
+	  </image>
+	  <path class="path" d="M10 10 q100,120 120,20 q140,-50 160,0"  ></path>
+	</svg>
+
+
+	<svg class="arc"  style="margin-left: 100px;" viewbox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+	  	<path d="M0 50 Q0 0 50 0 Q100 0 100 50 Q100 100 50 100 Q0 100 0 50" stroke="black" style="stroke-width:1px;" fill="transparent"/>
+
+	</svg>
+
+	<svg class="arc" viewbox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+	  	
+		<circle cx="100" cy="50" r="40" stroke="black"
+stroke-width="2" fill="red"/>
+	</svg>
+
+	<img src="http://p.cdn.pengpengla.com/u/2015/3/24/32475690_1427165726712.jpg" class="css3" />
+</div>
+
+<script>
+</script>
+
+</body>
+</html>
+
