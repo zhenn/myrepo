@@ -22,7 +22,7 @@
 	border-radius: 50%;
 }
 .r-wait.anim .avatar span {
-	-webkit-animation : fade 4s ease-in-out infinite;
+	-webkit-animation : fade 4s ease-in infinite;
 }
 
 @-webkit-keyframes fade {
