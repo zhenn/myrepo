@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<title>UP音乐</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://local.cdn.pengpengla.com/upmusic/@@version/css/index.css" />
+<script src="http://p1.cdn.pengpengla.com/h5lib/1.0.2/js/require.js"></script>
+<script src="http://local.cdn.pengpengla.com/upmusic/@@version/js/jquery.js"></script>
+</head>
+
+<body>
+<div class="header">
+	<div class="box">
+		<img src="http://local.cdn.pengpengla.com/upmusic/@@version/images/logo.png" />
+	</div>
+</div>
+
+<div class="banner">
+	<div class="box">
+		<img class="group" src="http://local.cdn.pengpengla.com/upmusic/@@version/images/group.png" />
+		<img class="text" src="http://local.cdn.pengpengla.com/upmusic/@@version/images/text1.png" />
+		<img class="phone" src="http://local.cdn.pengpengla.com/upmusic/@@version/images/phone.png" />
+	</div>
+</div>
+
+<div class="main">
+	<div class="box">
+		<div class="l">
+			<img src="http://local.cdn.pengpengla.com/upmusic/@@version/images/shape.png" />
+			<img class="pic" src="http://local.cdn.pengpengla.com/upmusic/@@version/images/pic.png" />
+		</div>
+		<div class="r">
+			<h3>传播你的音乐，分享你的才华</h3>
+			
+			<div class="act">
+				<img id="play" class="play hidden" src="http://local.cdn.pengpengla.com/upmusic/@@version/images/playbtn.png" /><span id="mp3">http://local.cdn.pengpengla.com/upmusic/@@version/images/song.mp3</span><p class="songname">春祭</p>
+			</div>
+			<div class="song">
+				<p>还好你依然能活在幻想里</p>
+				<p>那里有金黄的海 粉红的天际</p>
+				<p>你对我轻轻耳语说冬天很快会过去</p>
+				<p>不再需要我送你的那件棉衣</p>
+				<p>春天终于来了 而你忽然病了</p>
+				<p>看着你潦草的文字，又记起你让我心疼的样子</p>
+				<p>......</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<audio id="player" src="http://local.cdn.pengpengla.com/upmusic/@@version/images/song.mp3"></audio>
+
+<script>
+    require.config({
+        baseUrl : 'http://local.cdn.pengpengla.com/upmusic/@@version/js/'
+    });
+    require(['index']);
+</script>
+</body>
+</html>
+

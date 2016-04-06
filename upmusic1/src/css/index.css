@@ -1,0 +1,108 @@
+@import url(./reset.css);
+@import url(./skin.css);
+html , body {
+	height: 100%;
+}
+#wrap {
+	height: 100%;
+}
+.header {
+	height: 57px;
+	background: #7c6dba;
+}
+.header .box {
+	width: 948px;
+	height: 100%;
+	margin: 0 auto;
+}
+.header .box img {
+	float: left;
+	margin-top: 4px;
+}
+
+.banner {
+	height: 462px;
+	background: url(http://local.cdn.pengpengla.com/upmusic/@@version/images/banner.png) no-repeat 50% 50%;
+	background-size: 100% 462px;
+}
+.banner .box {
+	height: 100%;
+	width: 948px;
+	margin: 0 auto;
+	position: relative;
+}
+.banner .box  .group {
+	position: absolute;
+	left: 132px;
+	top: 105px;
+}
+.banner .box .text {
+	position: absolute;
+	left: 61px;
+	bottom: 155px;
+}
+.banner .box .phone {
+	position: absolute;
+	right: 52px;
+	bottom: 0px;
+}
+.mejs-container { 
+	display: none; 
+}
+
+.main .box {
+	width: 948px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 0 40px;
+}
+.main .box .l {
+	float: left;
+	margin-top: 24px;
+}
+.main .box .l img {
+	display: block;
+}
+.main .box .l img.pic {
+	margin: 26px 0 0 22px;
+}
+.main .box .r {
+	float: left;
+	margin: 0 0 0 15px;
+	color: #bdbdbd;
+	font-size: 20px;
+}
+.main .box .r h3 {
+	padding-top: 22px;
+	font-weight: normal;
+}
+
+.main .box .r .song {
+	color: #858585;
+	line-height: 36px;
+	padding-left: 36px;
+	font-size: 16px;
+	padding-top: 5px;
+}
+.act {
+	width: 600px;
+	margin-top: 24px;
+	color: #212121;
+	overflow: hidden;
+}
+.act .play {
+	float: left;
+}
+.act .songname {
+	float: left;
+	margin-left: 10px;
+}
+#mp3 {
+	width: 26px;
+	height: 20px;
+	display: block;
+	overflow: hidden;
+	float: left;
+	margin-top: 5px;
+	visibility: hidden;
+}
