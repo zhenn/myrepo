@@ -1,4 +1,21 @@
-var Events = (function() {
+/**
+ * Event center
+ */
+(function(global, factory) {
+
+    // amd mode
+    if (typeof define === 'function' && define["amd"]) {
+        define(factory);
+    } else if (typeof require === 'function' && typeof module === "object" && module && module["exports"]) {
+        // commonjs mode
+        module.exports = factory();
+    } else {
+        // global mode
+        global.events = factory();
+    }
+
+})(window, function() {
+    
     var Callbacks = function (options) {
         options = $.extend({}, options);
 
@@ -328,11 +345,15 @@ var Events = (function() {
     Events.channel.global = Events.channel;
 
     return Events;
-})();
+
+});
+
+
 
 
 var obj = {};
-$.extend(obj, Events);
+console.log(window.events)
+$.extend(obj, events);
 
 $.channel.on('a', function(data) {
     alert(data)
